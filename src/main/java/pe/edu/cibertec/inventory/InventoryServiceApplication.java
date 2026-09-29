@@ -2,8 +2,10 @@ package pe.edu.cibertec.inventory;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
+@EnableFeignClients(basePackages = "pe.edu.cibertec.inventory.client")
 public class InventoryServiceApplication {
 
 	public static void main(String[] args) {
